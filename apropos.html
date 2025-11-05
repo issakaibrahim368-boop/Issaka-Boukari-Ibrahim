@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>À propos - Quartet Store</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ajouts CSS spécifiques pour la section équipe */
+    :root{
+      --accent: #ffd700;
+      --bg:#0e0e0e;
+      --card:#171717;
+      --muted:#cfcfcf;
+      --white:#ffffff;
+    }
+    body{background:var(--bg); color:var(--muted); font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; padding:28px;}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px;}
+
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius:14px;
+      padding:28px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.6);
+      color:var(--muted);
+    }
+
+    .hero-card h1{color:var(--accent); margin:0 0 8px 0; font-size:2rem; letter-spacing:1.5px; text-transform:uppercase}
+    .hero-card p{color:#e6e6e6; margin:10px 0 0 0; line-height:1.6}
+
+    /* Team */
+    .team{margin-top:22px; display:grid; grid-template-columns:repeat(4,1fr); gap:16px;}
+    .member{
+      background:var(--card);
+      border-radius:12px;
+      padding:12px;
+      text-align:center;
+      overflow:hidden;
+      transition:transform .18s ease, box-shadow .18s ease;
+    }
+    .member:hover{ transform:translateY(-6px); box-shadow:0 12px 30px rgba(0,0,0,0.6); }
+
+    .member .photo{
+      width:120px; height:120px; margin:0 auto; border-radius:12px; overflow:hidden; display:block;
+      box-shadow:0 6px 18px rgba(0,0,0,0.5);
+    }
+    .member img{width:100%; height:100%; object-fit:cover; display:block}
+
+    .member h3{color:var(--white); margin:10px 0 4px 0; font-size:1.02rem}
+    .member p.role{margin:0; color:var(--muted); font-size:0.9rem; margin-bottom:8px}
+
+    .contact-chips{display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-top:8px}
+    .chip{
+      background:rgba(255,215,0,0.07);
+      color:var(--accent);
+      padding:6px 8px;
+      border-radius:8px;
+      font-weight:600;
+      text-decoration:none;
+      font-size:0.85rem;
+    }
+    .chip.secondary{ background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,0.03); }
+
+    /* responsive */
+    @media (max-width:1000px){ .team{grid-template-columns:repeat(2,1fr);} }
+    @media (max-width:560px){ .team{grid-template-columns:1fr;} .member .photo{width:96px;height:96px} }
+
+    footer{color:#9b9b9b; text-align:center; margin-top:18px}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Quartet<span class="accent">.</span>Store</a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="produits.html" class="nav-link">Produits</a>
+        <a href="apropos.html" class="nav-link active">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="ouvrir le menu">
+        <span class="burger"></span>
+      </button>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="hero-card">
+      <h1>À propos de Quartet Store</h1>
+      <p>
+        Bienvenue chez <strong style="color:var(--accent)">Quartet Store</strong>, la plateforme imaginée par quatre associés soudés par la même ambition : offrir une sélection soignée d'articles — vêtements, chaussures, accessoires, beauté et plus encore.
+        Nous travaillons en partenariat avec des vendeurs locaux pour offrir visibilité, gestion simplifiée et un service client irréprochable.
+      </p>
+
+      <p style="margin-top:12px;">
+        Notre modèle est simple et transparent : <strong style="color:var(--accent)">les vendeurs nous confient leurs produits</strong>, nous les présentons sur le site et nous gérons la relation client. Pour chaque vente réalisée via notre plateforme.
+      </p>
+
+      <h2 style="color:var(--accent); margin-top:20px;">Notre équipe</h2>
+
+      <!-- équipe -->
+      <div class="team">
+        <!-- Membre 1 -->
+        <div class="member">
+          <div class="photo">
+            <!-- Enregistre la photo envoyée comme images/member1.jpg -->
+            <img src="Les membres/Membre 1.jpg" alt="Membre 1 - Quartet Store">
+          </div>
+          <h3>Membre 1</h3>
+          <p class="role">Co-fondateur : Ibrahim Issaka</p>
+          <div class="contact-chips">
+            <a class="chip" href="tel:+22780391523"> telephone: +227 80 39 15 23</a>
+            <a class="chip" href="https://wa.me/22780391523" target="_blank">WhatsApp : 80 39 15 23</a>
+            <a class="chip" href="mailto:issakaibrahim368@gmail.com">Compte email : issakaibrahim368@gmail.com </a>
+            <a class="chip secondary" href="https://facebook.com/Ibrahim Issaka" target="_blank">Facebook</a>
+          </div>
+        </div>
+
+        <!-- Membre 2 -->
+        <div class="member">
+          <div class="photo">
+            <img src="Les membres/Membre 2.jpg" alt="Membre 2 - Quartet Store">
+          </div>
+          <h3>Membre 2</h3>
+          <p class="role">Co-fondateur : Mahamadou Ousmane Hassane Chabani </p>
+          <div class="contact-chips">
+            <a class="chip" href="tel:+22788187882">+227 88 18 78 82</a>
+            <a class="chip" href="https://wa.me/22788187882" target="_blank">WhatsApp : 88 18 78 82</a>
+            <a class="chip" href="mailto:m2@example.com">mahamadouousmanehassanechabani@gmail.com</a>
+            <a class="chip secondary" href="https://facebook.com/membre2" target="_blank">Facebook</a>
+          </div>
+        </div>
+
+        <!-- Membre 3 -->
+        <div class="member">
+          <div class="photo">
+            <img src="Les membres/Membre 3.jpg" alt="Membre 3 - Quartet Store">
+          </div>
+          <h3>Membre 3</h3>
+          <p class="role"> Co-fondateur : Abdoulaye kamaladina Mahamdou</p>
+          <div class="contact-chips">
+            <a class="chip" href="tel:+22788400125"> telephone : +227 88 40 01 25</a>
+            <a class="chip" href="https://wa.me/22788400125" target="_blank">WhatsApp : 88 40 01 25</a>
+            <a class="chip" href="mailto:mahamadoukamaladinaabdoulaye@gmail.com">Compte email : mahamadoukamaladinaabdoulaye.....</a>
+            <a class="chip secondary" href="https://facebook.com/membre3" target="_blank">Facebook</a>
+          </div>
+        </div>
+
+        <!-- Membre 4 -->
+        <div class="member">
+          <div class="photo">
+            <img src="Les membres/Membre 4.jpg" alt="Membre 4 - Quartet Store">
+          </div>
+          <h3>Membre 4</h3>
+          <p class="role">Co-fondateur: Abdoul Jalil</p>
+          <div class="contact-chips">
+            <a class="chip" href="tel:+22798305453">telephone: +227 98 30 54 53</a>
+            <a class="chip" href="https://wa.me/+22798305453" target="_blank">WhatsApp : 98 30 54 53</a>
+            <a class="chip" href="mailto:lilkadi370@gmail.com">Compte email : lilkadi370@gmail.com</a>
+            <a class="chip secondary" href="https://facebook.com/Lyl Khadi" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:16px; color:#dcdcdc;">
+        Vous souhaitez devenir partenaire ? <span style="color:var(--accent); font-weight:700;">Contactez-nous</span> via l’un des numéros ci-dessus — nous répondrons rapidement.
+      </p>
+    </div>
+
+    <footer>&copy; <span style="color:var(--accent)">2025 Quartet Store</span> — Tous droits réservés.</footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

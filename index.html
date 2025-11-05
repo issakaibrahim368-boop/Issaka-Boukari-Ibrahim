@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quartet Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Quartet<span class="accent">.</span>Store</a>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="produits.html" class="nav-link">Produits</a>
+        <a href="apropos.html" class="nav-link">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="ouvrir le menu">
+        <span class="burger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Élégance. Simplicité. Style.</h1>
+          <p>Collection de vêtements et chaussures ainsi que tout autres accessesoires soigneusement sélectionnée. Découvrez la qualité minimaliste.</p>
+          <div class="hero-actions">
+            <a href="produits.html" class="btn btn-primary">Voir la collection</a>
+            <a href="apropos.html" class="btn btn-ghost">Notre histoire</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- image placeholder -->
+          <img src="collection.jpg" alt="Collection Quartet Fashion">
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured container">
+      <h2 class="section-title">Produits en vedette</h2>
+      <div class="products-grid">
+        <!-- Card 1 -->
+        <article class="product-card">
+          <img src="chemises/chemise 1.jpg" alt="Chemise">
+          <div class="card-body">
+            <h3 class="product-title">Chemise</h3>
+            <p class="product-price">2000 FCFA</p>
+            <a class="btn btn-outline" href="produits.html">Voir</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card">
+          <img src="chausssures/chaussure 1.jpg" alt="Baskets">
+          <div class="card-body">
+            <h3 class="product-title">Baskets AIR</h3>
+            <p class="product-price">5000 FCFA</p>
+            <a class="btn btn-outline" href="produits.html">Voir</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card">
+          <img src="pantalon.jpg" alt="pantalon">
+          <div class="card-body">
+            <h3 class="product-title">Pantalon</h3>
+            <p class="product-price">6 500 XOF</p>
+            <a class="btn btn-outline" href="produits.html">Voir</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT MINI -->
+    <section class="mini-about container">
+      <div class="mini-about-inner">
+        <div>
+          <h3>Qui sommes-nous ?</h3>
+          <p>Quartet Store — quatre partenaires, une vision : offrir des pièces élégantes, durables et accessibles.</p>
+        </div>
+        <div>
+          <a href="apropos.html" class="btn btn-ghost">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="logo">Quartet<span class="accent">.</span>Store</p>
+        <p class="small">© <span id="year"></span> Quartet Store — Tous droits réservés</p>
+      </div>
+      <div class="footer-right">
+        <p>Suivez-nous</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
